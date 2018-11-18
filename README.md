@@ -1,22 +1,18 @@
-# ♠️ Week08 Bootcamp2018c Project: Matching Card Game
+# Matching-Card-Game
+This application is a matching card game that restarts after matching all cards.
 
-### Goal: Make a 10 card memory game - users must be able to select two cards and check if they are a match. If they are a match, they stay flipped. If not, they flip back over. Game is done when all cards are matched and flipped over. Example: http://www.fruit-burst.co.uk/fun-and-games/pairs-game 
+![alt tag](images/cardGame.png)
 
-### How to submit your code for review:
+## How It's Made:
 
-- Fork and clone this repo
-- Create a new branch called answer
-- Checkout answer branch
-- Push to your fork
-- Issue a pull request
-- Your pull request description should contain the following:
-  - (1 to 5 no 3) I completed the challenge
-  - (1 to 5 no 3) I feel good about my code
-  - Anything specific on which you want feedback!
+**Tech used:** HTML, CSS, JavaScript
 
-Example:
-```
-I completed the challenge: 5
-I feel good about my code: 4
-I'm not sure if my constructors are setup cleanly...
-```
+This application is built with having a gameState object that holds the values of each card, with the property is the card index number. Setting a event listener for each card section, when the first card selected is click, we store the index number, follow by clicking on the second card a setTimeOut method runs to allow the user to see the cards. After a set amount of time, the match function runs to see if the cards are the same, if not we set the default image back.
+
+## Optimizations
+
+Include a win match function that tracks score of users points during the game.
+
+## Lessons Learned:
+
+I learned to set key value pairs in an object for control access of information. The sections index number correlates to the property in the gameState object and use that to always reference the section state during the game.

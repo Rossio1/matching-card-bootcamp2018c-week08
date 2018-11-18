@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background: crimson;
+  text-align: center;
+}
+
+.card{
+  background-image: url("images/front.jpg");
+  height: 200px;
+  width: 18%;
+  margin: 20px 1%;
+  float: left;
+}
